@@ -83,15 +83,18 @@ export class form extends Component {
     }
     handleSubmit = (event) => {
         alert(`form submitted by ${this.state.username}`)
-        console.log(`name: ${this.state.username}
+        console.log(`
+        name: ${this.state.username}
         email: ${this.state.email}
         phone no: ${this.state.contact}
         `)
         event.preventDefault()
     }
     passwordmatch = () => {
-        if(this.event.password === this.event.confirmpassord){
+        if(this.state.password == this.state.confirmpassord){
             console.log("password matched")
+        }else{
+          console.log("password doesnt match");
         }
     }
     
@@ -174,7 +177,7 @@ export class form extends Component {
                   </div>
 
                   <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="submit" className="btn btn-primary btn-lg">Register</button>
+                    <button type="submit" className="btn btn-primary btn-lg" onClick={this.passwordmatch}>Register</button>
                   </div>
 
                 </form>

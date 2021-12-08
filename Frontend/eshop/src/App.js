@@ -1,4 +1,5 @@
 import './App.css';
+import  Request  from './axios/axios';
 import Navbar from './navbar/navbar'
 // import Materialui from './materialexample/materialui'
 
@@ -8,6 +9,7 @@ function App() {
     // <Greet/>
     <>
     <Navbar></Navbar>
+    {/* <Request></Request> */}
     {/* <Materialui></Materialui> */}
     </>
 

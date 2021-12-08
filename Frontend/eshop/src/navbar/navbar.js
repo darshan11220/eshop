@@ -5,6 +5,8 @@ import Contact from '../contact/contact';
 import Login from '../login/login';
 import Register from '../register/registerform'
 import './navbar.css'
+import reactBootstrap from 'react-bootstrap'
+import "bootstrap/js/src/collapse.js";
 
 
 class navbar extends Component {

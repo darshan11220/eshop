@@ -17,20 +17,6 @@ router.post("/register" , (req,res,next) => {
 // module.exports = router;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 router.get("/" , (req,res) =>{
     res.send("My homepage")
 })
