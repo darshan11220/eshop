@@ -12,7 +12,7 @@ export class Request extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/posts').then(response => {
+        axios.get('https://jsonplaceholder.typicode.com/photos').then(response => {
             console.log(response)
             this.setState({list: response.data})
         }).catch(error => {
@@ -24,7 +24,7 @@ export class Request extends Component {
         const {list} = this.state
         return (
             <div>
-                {list.length? list.map(list => <div>{list.id} </div>) :null}
+                {list.length? list.map(list => <div>{list.url} </div>) :null}
             </div>
         )
     }
